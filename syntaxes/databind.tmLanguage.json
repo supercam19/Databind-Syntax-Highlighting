@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Databind",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#invalids"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+				"name": "keyword.control.databind",
+				"match": "\\b(runif|while|else)\\b"
+			}, 
+			{
+				"name":"keyword.databind", 
+				"match": "\\b(func|call|end|def|macro|tag)\\b"
+			},
+			{
+				"name": "keyword.other.databind",
+				"match": "\\!|\\?"
+			}
+		]
+		},
+		"comments": {
+			"name": "comment.line.databind",
+			"begin": "#",
+			"end": "\n"	
+		},
+		"invalids": {
+			"name": "invalid.databind",
+			"match": "\\%"
+		},
+		"variables": {
+			"name": "variable.databind",
+			"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
+		},
+		"strings": {
+			"name": "string.quoted.double.databind",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.databind",
+					"match": "\\\\."
+				}
+			]
+		}
+		
+	},
+	"scopeName": "source.databind"
+}
