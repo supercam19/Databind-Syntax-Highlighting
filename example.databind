@@ -2,15 +2,23 @@
 func main
     tag load
     var i := 10
+    obj example dummy
+    
+    !def macro($arg)
+        var $arg := 5
+    !end
+
     runif tvar i matches 10
-        say Hello
+        say If/Else statements
     else
-        say Else statement
-        !def macro()
+        sobj @a example = 10
     end
     while tvar i matches ..50
         call main
-        tellraw @a "While loop"
+        tellraw @a "This is a string"
         # This is a comment
     end
+    say %call << Escaped keyword
+    delvar i
+    delvar example
 end

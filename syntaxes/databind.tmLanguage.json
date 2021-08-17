@@ -28,10 +28,6 @@
 			{
 				"name":"keyword.databind", 
 				"match": "\\b(func|call|end|def|macro|tag)\\b"
-			},
-			{
-				"name": "keyword.other.databind",
-				"match": "\\!|\\?"
 			}
 		]
 		},
