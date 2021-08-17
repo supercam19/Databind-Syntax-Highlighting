@@ -1,0 +1,16 @@
+# example databind file seen in images/example.png
+func main
+    tag load
+    var i := 10
+    runif tvar i matches 10
+        say Hello
+    else
+        say Else statement
+        !def macro()
+    end
+    while tvar i matches ..50
+        call main
+        tellraw @a "While loop"
+        # This is a comment
+    end
+end
