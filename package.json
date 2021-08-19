@@ -1,8 +1,12 @@
 {
     "name": "databind",
-    "displayName": "Databind",
-    "description": "Databind Syntax Highlighter",
-    "version": "0.0.1",
+    "displayName": "Databind Language",
+    "icon": "images/icon.png",
+    "description": "Visual Studio Code syntax highlighter for Databind",
+    "version": "0.2.0",
+    "publisher": "Supercam19",
+    "license": "MIT",
+    "repository": "https://github.com/supercam19/Databind-Syntax-Highlighting",
     "engines": {
         "vscode": "^1.59.0"
     },

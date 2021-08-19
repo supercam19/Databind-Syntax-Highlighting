@@ -16,6 +16,9 @@
 		},
 		{
 			"include": "#invalids"
+		},
+		{
+			"include": "#entities"
 		}
 	],
 	"repository": {
@@ -23,11 +26,11 @@
 			"patterns": [
 				{
 				"name": "keyword.control.databind",
-				"match": "\\b(runif|while|else)\\b"
+				"match": "runif|while|else"
 			}, 
 			{
 				"name":"keyword.databind", 
-				"match": "\\b(func|call|end|def|macro|tag)\\b"
+				"match": "func|call|end|def|macro|tag|def|\\!|\\?"
 			}
 		]
 		},
@@ -51,11 +54,10 @@
 			"patterns": [
 				{
 					"name": "constant.character.escape.databind",
-					"match": "\\\\."
+					"match": ""
 				}
 			]
-		}
-		
+		}	
 	},
 	"scopeName": "source.databind"
 }

@@ -14,13 +14,13 @@ NOTICE: This extension is very early in development.
 
 
 
-![Syntax Highlighting for](images/example.png)
+![Syntax highlighting for Databind](images/example.png)
 
 ## Installation
 
 For now to install the extension:
 
-1. Clone the repository or download the zip
+1. Clone the repository or download and extract the zip
 2. Put the extension folder in your /Users/[USERNAME]/.vscode/extenstions folder
 3. Load VS Code
 4. Remember to switch the syntax in VS Code from plain text to Databind!

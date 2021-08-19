@@ -5,7 +5,7 @@ func main
     obj example dummy
     
     !def macro($arg)
-        var $arg := 5
+        tellraw @a $arg
     !end
 
     runif tvar i matches 10
@@ -19,6 +19,7 @@ func main
         # This is a comment
     end
     say %call << Escaped keyword
+    ?macro("Macro example")
     delvar i
     delvar example
 end
