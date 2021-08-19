@@ -31,6 +31,14 @@
 			{
 				"name":"keyword.databind", 
 				"match": "func|call|end|def|macro|tag|def|\\!|\\?"
+			},
+			{
+				"name": "constant.regexp.databind",
+				"match": "tick|load"
+			},
+			{
+				"name": "keyword.operator.quantifier.regexp.databind",
+				"match": "@a|@e|@p|@r|@s"
 			}
 		]
 		},
@@ -44,9 +52,20 @@
 			"match": "\\%"
 		},
 		"variables": {
-			"name": "variable.databind",
-			"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
-		},
+			"patterns": [
+				{
+				"name": "variable.databind",
+				"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
+			},
+			{
+				"name": "constant.numeric.databind",
+				"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
+			},
+			{
+				"name": "storage.type.numeric.go.databind",
+				"match": "[0-9]|\\."
+			}
+	]},
 		"strings": {
 			"name": "string.quoted.double.databind",
 			"begin": "\"",

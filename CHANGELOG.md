@@ -1,6 +1,19 @@
 # Change Log
 
-## v0.2 (2021/08/18)
+## 0.3.0 (August 19, 2021)
+
+### Additions
+- All operators have syntax highlighting
+- Highlighting for the tick and load tags
+- Highlighting for numbers and dots (ex: 10..50)
+- Highlighting for selectors
+
+### Changes
+- Changed extension name to Language Databind
+- Update example image to showcase new features
+- Update feature list in README.md
+
+## v0.2.0 (2021/08/18)
 
 ### Additions
 - Quotation marks auto-close
@@ -16,7 +29,7 @@
 - Improper databind syntax in the example image
 - Spelling error in README.md
 
-## Initial Release (v.0.1 - 2021/08/14)
+## Initial Release (v.0.1.0 - 2021/08/14)
 
 ### Features:
 - Syntax highlighting for most Databind features

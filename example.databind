@@ -12,6 +12,8 @@ func main
         say If/Else statements
     else
         sobj @a example = 10
+        sobj @a example %= @s example
+        sobj @r example >< @s example
     end
     while tvar i matches ..50
         call main

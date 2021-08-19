@@ -4,13 +4,15 @@ A Visual Studio Code syntax highlighter extension for [MysteryBlokHed's](https:/
 
 Syntax highlighter created by [Supercam19](https://www.github.com/supercam19).
 
-NOTICE: This extension is very early in development.
+NOTICE: This extension is early in development.
 
 ## Features
 
 - Syntax highlighting for most of Databinds features
 - Syntax highlighting for strings
 - Syntax highlighting for comments
+- Syntax highlighting for some mcfunction features
+- Auto-closing symbols such as: "", {}, etc...
 
 
 
