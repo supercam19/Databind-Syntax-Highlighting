@@ -20,9 +20,13 @@ NOTICE: This extension is early in development.
 
 ## Installation
 
-For now to install the extension:
+### Automatic
+
+Download the extension from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=supercam19.language-databind&ssr=false#overview) or search `databind` in the the extension tab of the VS Code app.
+
+### Manual
 
 1. Clone the repository or download and extract the zip
 2. Put the extension folder in your /Users/[USERNAME]/.vscode/extenstions folder
-3. Load VS Code
-4. Remember to switch the syntax in VS Code from plain text to Databind!
+3. Reload VS Code
+
