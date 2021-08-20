@@ -1,5 +1,10 @@
 # Change Log
 
+## Not Released
+
+### Fixes
+- Improper syntax in example.databind
+
 ## 0.3.0 (August 19, 2021)
 
 ### Additions

@@ -1,36 +1,50 @@
 {
-    "name": "language-databind",
-    "displayName": "Language Databind",
-    "icon": "images/icon.png",
-    "description": "Visual Studio Code syntax highlighter for Databind",
-    "version": "0.3.0",
-    "publisher": "Supercam19",
-    "license": "MIT",
-    "repository": "https://github.com/supercam19/Language-Databind",
-    "engines": {
-        "vscode": "^1.59.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "databind",
-            "aliases": ["Databind", "databind"],
-            "extensions": [".databind"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "databind",
-            "scopeName": "source.databind",
-            "path": "./syntaxes/databind.tmLanguage.json"
-        }],
-        "themes": [
-            {
-                "label": "Language Databind",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Databind-color-theme.json"
-            }
-        ]
-    }
+	"name": "language-databind",
+	"displayName": "Language Databind",
+	"icon": "images/icon.png",
+	"description": "Visual Studio Code syntax highlighter for Databind",
+	"version": "0.3.0",
+	"publisher": "Supercam19",
+	"license": "MIT",
+	"repository": "https://github.com/supercam19/Language-Databind",
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "databind",
+				"aliases": [
+					"Databind",
+					"databind"
+				],
+				"extensions": [
+					".databind"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "databind",
+				"scopeName": "source.databind",
+				"path": "./syntaxes/databind.tmLanguage.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Language Databind",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Databind-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "bf7a25dc-1377-41b2-b8b7-8b84124ea561",
+		"publisherDisplayName": "Supercam19",
+		"publisherId": "ab807c1d-fc38-43e8-b854-42ddd313ee0a"
+	}
 }
