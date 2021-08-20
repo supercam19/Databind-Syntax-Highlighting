@@ -24,10 +24,10 @@
 	"repository": {
 		"keywords": {
 			"patterns": [
-				{
+			{
 				"name": "keyword.control.databind",
 				"match": "runif|while|else"
-			}, 
+			},
 			{
 				"name":"keyword.databind", 
 				"match": "func|call|end|def|macro|tag|def|\\!|\\?"
@@ -38,14 +38,14 @@
 			},
 			{
 				"name": "keyword.operator.quantifier.regexp.databind",
-				"match": "@a|@e|@p|@r|@s"
+				"match": "@a|@e|@p|@r|@s|true|false"
 			}
 		]
 		},
 		"comments": {
 			"name": "comment.line.databind",
 			"begin": "#",
-			"end": "\n"	
+			"end": "\n"
 		},
 		"invalids": {
 			"name": "invalid.databind",
@@ -54,17 +54,17 @@
 		"variables": {
 			"patterns": [
 				{
-				"name": "variable.databind",
-				"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
-			},
-			{
-				"name": "constant.numeric.databind",
-				"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
-			},
-			{
-				"name": "storage.type.numeric.go.databind",
-				"match": "[0-9]|\\."
-			}
+					"name": "variable.databind",
+					"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
+				},
+				{
+					"name": "constant.numeric.databind",
+					"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
+				},
+				{
+					"name": "storage.type.numeric.go.databind",
+					"match": "[0-9]|\\."
+				}
 	]},
 		"strings": {
 			"name": "string.quoted.double.databind",

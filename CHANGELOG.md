@@ -2,6 +2,10 @@
 
 ## Not Released
 
+### Aditions
+
+- Highlighting for booleans
+
 ### Changes
 - Update install instructions in README.md
 
