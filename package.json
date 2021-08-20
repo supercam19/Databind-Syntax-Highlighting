@@ -1,5 +1,5 @@
 {
-    "name": "databind",
+    "name": "language-databind",
     "displayName": "Language Databind",
     "icon": "images/icon.png",
     "description": "Visual Studio Code syntax highlighter for Databind",
