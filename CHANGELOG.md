@@ -2,6 +2,9 @@
 
 ## Not Released
 
+### Changes
+- Update install instructions in README.md
+
 ### Fixes
 - Improper syntax in example.databind
 
