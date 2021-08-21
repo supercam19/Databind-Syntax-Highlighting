@@ -23,19 +23,34 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [
+			"patterns": [		
 			{
+				"begin": "say",
+				"end": "\n",
 				"name": "keyword.control.databind",
-				"match": "runif|while|else"
+				"patterns": [
+					{
+						"name": "invalid.illegal.databind",
+						"match": "\\%"
+					},
+					{
+						"name": "string.quoted.double.databind",
+						"match": "([^\\%]*)+"
+					}
+				]
 			},
 			{
-				"begin": "func",
+				"begin": "func|call\\ ",
 				"end": "\n",
 				"name": "keyword.databind",
 				"patterns": [
 					{
 						"name": "storage.type.string.go",
-						"match": "[a-z]+"
+						"match": "(?!\\%)[a-z0-9_]+"
+					},
+					{
+						"name": "invalid.illegal",
+						"match": "[A-Z]+"
 					}
 				]
 			},

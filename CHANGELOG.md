@@ -4,7 +4,9 @@
 
 ### Aditions
 
-- Highlighting for booleans
+- Highlighting
+ - Booleans
+ - /say command (text now looks like a string)
 
 ### Changes
 - Update install instructions in README.md
