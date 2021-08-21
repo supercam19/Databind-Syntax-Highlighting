@@ -1,19 +1,19 @@
 # example databind file seen in images/example.png
-func main
+func main;
     tag load
     var i := 10
     obj example dummy
     
     !def macro($arg)
-        tellraw @a $arg
+        tellraw @a "$arg"
     !end
 
     runif tvar i matches 10
         say If/Else statements
     else
-        sobj @a example = 10
-        sobj @a example %= @s example
-        sobj @r example >< @s example
+        sbop @a example = 10
+        sbop @a example %= @s example
+        sbop @r example >< @s example
     end
     while tvar i matches ..50
         call main
