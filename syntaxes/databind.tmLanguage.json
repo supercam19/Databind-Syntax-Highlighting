@@ -29,6 +29,17 @@
 				"match": "runif|while|else"
 			},
 			{
+				"begin": "func",
+				"end": "\n",
+				"name": "keyword.databind",
+				"patterns": [
+					{
+						"name": "storage.type.string.go",
+						"match": "[a-z]+"
+					}
+				]
+			},
+			{
 				"name":"keyword.databind", 
 				"match": "func|call|end|def|macro|tag|def|\\!|\\?"
 			},
