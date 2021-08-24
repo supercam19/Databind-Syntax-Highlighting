@@ -5,6 +5,10 @@
 ### Aditions
 
 - Highlighting
+ - Function names
+ - Variable names
+ - Objective names
+ - Macro names
  - Booleans
  - /say command (text now looks like a string)
 
