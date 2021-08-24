@@ -4,13 +4,15 @@
 
 ### Aditions
 
-- Highlighting
- - Function names
- - Variable names
- - Objective names
- - Macro names
- - Booleans
- - /say command (text now looks like a string)
+Highlighting for:
+<ol>
+  <li> Function names </li>
+  <li> Variable names </li>
+  <li>  Objective names </li>
+  <li> Macro names </li>
+  <li> /say command (text now looks like a string) </li>
+  <li> Booleans </li>
+</ol>
 
 ### Changes
 - Update install instructions in README.md
