@@ -23,14 +23,70 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [
+			"patterns": [		
+			{
+				"begin": "say",
+				"end": "\n",
+				"name": "keyword.control.databind",
+				"patterns": [
+					{
+						"name": "invalid.illegal.databind",
+						"match": "\\%"
+					},
+					{
+						"name": "string.quoted.double.databind",
+						"match": "([^\\%]*)+"
+					}
+				]
+			},
+			{
+				"begin": "func|call\\ ",
+				"end": "\n",
+				"name": "keyword.databind",
+				"patterns": [
+					{
+						"name": "token.debug-token.databind",
+						"match": "(?!\\%)[a-z0-9_]+"
+					},
+					{
+						"name": "invalid.illegal",
+						"match": "[A-Z]+"
+					}
+				]
+			},
+			{
+				"begin": "\\?|def",
+				"end": "\n",
+				"name": "keyword.databind",
+				"patterns": [
+					{
+						"name": "token.debug-token.databind",
+						"match": "[a-z0-9A-Z]+"
+					},
+					{
+						"name": "support.constant.math.databind",
+						"match": "\\(|\\)"
+					},
+					{
+						"name": "string.quoted.double.databind",
+						"begin": "\"",
+						"end": "\"",
+						"patterns": [
+						{
+							"name": "constant.character.escape.databind",
+							"match": ""
+						}
+						]
+					}
+				]
+			},
 			{
 				"name": "keyword.control.databind",
 				"match": "runif|while|else"
 			},
 			{
 				"name":"keyword.databind", 
-				"match": "func|call|end|def|macro|tag|def|\\!|\\?"
+				"match": "end|def|tag|\\!|\\?"
 			},
 			{
 				"name": "constant.regexp.databind",
@@ -54,8 +110,34 @@
 		"variables": {
 			"patterns": [
 				{
+					"begin": "\\b(var |obj |sobj |tvar |gvar |delvar |delobj )\\b",
+					"end": "\n| ",
 					"name": "variable.databind",
-					"match": "\\b(var|obj|sobj|tvar|sbop|gvar|delvar|delobj)\\b"
+					"patterns": [
+						{
+							"name": "storage.type.string.go.databind",
+							"match": "[a-zA-Z0-9_]+"
+						}
+					]
+				},
+				{
+					"begin": "sbop",
+					"end": "\n",
+					"name": "variable.databind",
+					"patterns": [
+						{
+							"name": "constant.numeric.databind",
+							"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
+						},
+						{
+							"name": "keyword.operator.quantifier.regexp.databind",
+							"match": "@a|@e|@p|@r|@s"
+						},
+						{
+							"name": "storage.type.string.go.databind",
+							"match": "[a-zA-Z0-9]+"
+						}
+					]
 				},
 				{
 					"name": "constant.numeric.databind",
