@@ -45,7 +45,7 @@
 				"name": "keyword.databind",
 				"patterns": [
 					{
-						"name": "storage.type.string.go",
+						"name": "token.debug-token.databind",
 						"match": "(?!\\%)[a-z0-9_]+"
 					},
 					{
@@ -55,8 +55,38 @@
 				]
 			},
 			{
+				"begin": "\\?|def",
+				"end": "\n",
+				"name": "keyword.databind",
+				"patterns": [
+					{
+						"name": "token.debug-token.databind",
+						"match": "[a-z0-9A-Z]+"
+					},
+					{
+						"name": "support.constant.math.databind",
+						"match": "\\(|\\)"
+					},
+					{
+						"name": "string.quoted.double.databind",
+						"begin": "\"",
+						"end": "\"",
+						"patterns": [
+						{
+							"name": "constant.character.escape.databind",
+							"match": ""
+						}
+						]
+					}
+				]
+			},
+			{
+				"name": "keyword.control.databind",
+				"match": "runif|while|else"
+			},
+			{
 				"name":"keyword.databind", 
-				"match": "func|call|end|def|tag|def|\\!|\\?"
+				"match": "end|def|tag|\\!|\\?"
 			},
 			{
 				"name": "constant.regexp.databind",
@@ -87,6 +117,25 @@
 						{
 							"name": "storage.type.string.go.databind",
 							"match": "[a-zA-Z0-9_]+"
+						}
+					]
+				},
+				{
+					"begin": "sbop",
+					"end": "\n",
+					"name": "variable.databind",
+					"patterns": [
+						{
+							"name": "constant.numeric.databind",
+							"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
+						},
+						{
+							"name": "keyword.operator.quantifier.regexp.databind",
+							"match": "@a|@e|@p|@r|@s"
+						},
+						{
+							"name": "storage.type.string.go.databind",
+							"match": "[a-zA-Z0-9]+"
 						}
 					]
 				},
