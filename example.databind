@@ -1,5 +1,5 @@
 # example databind file seen in images/example.png
-func main;
+func main
     tag load
     var i := 10
     obj example dummy
@@ -20,7 +20,7 @@ func main;
         tellraw @a "This is a string"
         # This is a comment
     end
-    say %call << Escaped keyword
+    say %call << Escaped keyword 
     ?macro("Macro example")
     delvar i
     delvar example
