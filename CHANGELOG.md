@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Changes
+- Tokenization now matches exact words rather than exact characters. (#5)
 - Improvements to README.md
 
 ## Dynamic Naming - v0.4.0 (August 23, 2021)
