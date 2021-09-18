@@ -1,10 +1,11 @@
 # Change Log
 
-## Unreleased
+## Match Exact Words [0.4.1] (Sept. 18, 2021)
 
 ### Changes
 - Tokenization now matches exact words rather than exact characters. (#5)
 - Improvements to README.md
+- Improvements to the syntax coloring to make it look better.
 
 ## Dynamic Naming - v0.4.0 (August 23, 2021)
 

@@ -45,7 +45,7 @@
 				"name": "keyword.databind",
 				"patterns": [
 					{
-						"name": "token.debug-token.databind",
+						"name": "entity.name.variable.databind",
 						"match": "(?!\\%)[a-z0-9_]+"
 					},
 					{
@@ -60,11 +60,11 @@
 				"name": "keyword.databind",
 				"patterns": [
 					{
-						"name": "token.debug-token.databind",
+						"name": "entity.name.variable.databind",
 						"match": "[a-z0-9A-Z]+"
 					},
 					{
-						"name": "support.constant.math.databind",
+						"name": "constant.regexp.databind",
 						"match": "\\(|\\)"
 					},
 					{
