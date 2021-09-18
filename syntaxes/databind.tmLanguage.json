@@ -40,7 +40,7 @@
 				]
 			},
 			{
-				"begin": "func|call\\ ",
+				"begin": "\\b(func|call)\\b ",
 				"end": "\n",
 				"name": "keyword.databind",
 				"patterns": [
@@ -55,7 +55,7 @@
 				]
 			},
 			{
-				"begin": "\\?|def",
+				"begin": "\\b(def)\\b|\\?",
 				"end": "\n",
 				"name": "keyword.databind",
 				"patterns": [
@@ -82,19 +82,19 @@
 			},
 			{
 				"name": "keyword.control.databind",
-				"match": "runif|while|else"
+				"match": "\\b(runif|while|else)\\b"
 			},
 			{
 				"name":"keyword.databind", 
-				"match": "end|def|tag|\\!|\\?"
+				"match": "\\b(end|def|tag)\\b|\\!|\\?"
 			},
 			{
 				"name": "constant.regexp.databind",
-				"match": "tick|load"
+				"match": "\\b(tick|load)\\b"
 			},
 			{
 				"name": "keyword.operator.quantifier.regexp.databind",
-				"match": "@a|@e|@p|@r|@s|true|false"
+				"match": "\\b(true|false)\\b|@a|@e|@p|@r|@s"
 			}
 		]
 		},
@@ -121,7 +121,7 @@
 					]
 				},
 				{
-					"begin": "sbop",
+					"begin": "\\b(sbop)\\b",
 					"end": "\n",
 					"name": "variable.databind",
 					"patterns": [
