@@ -1,4 +1,4 @@
-# Language Databind <img src="images/icon.png" alt="drawing" width="40"/>
+# Language Databind <img src="images/icon.png" alt="image" width="40"/>
 
 A Visual Studio Code syntax highlighter extension for [MysteryBlokHed's](https://www.github.com/MysteryBlokHed/databind) databind language.
 
