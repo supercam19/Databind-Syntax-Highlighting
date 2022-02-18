@@ -1,5 +1,16 @@
 # Change Log
 
+## Recolour [0.5.0] (Feb. 18, 2022)
+
+### Additions
+- All base mcfunction commands are now highlighted
+- Tokenized all words that start with "minecraft:"
+- Colourized the tilda(~) and caret(^) symbols
+
+### Changes
+- Lots of changes to colour to improve how it looks
+- Added more commands to the example file/image to display more of the features
+
 ## Match Exact Words [0.4.1] (Sept. 18, 2021)
 
 ### Changes

@@ -1,15 +1,17 @@
-# example databind file seen in images/example.png
-func main;
+# Example databind file seen in images/example.png
+func main
     tag load
     var i := 10
     obj example dummy
     
-    !def macro($arg)
+    !def macro($arg, $arg2)
         tellraw @a "$arg"
+        tellraw @s "$arg2"
     !end
 
     runif tvar i matches 10
         say If/Else statements
+        execute as @a at @s run tp @s ^3 ~5 ~-10
     else
         sbop @a example = 10
         sbop @a example %= @s example
@@ -18,10 +20,11 @@ func main;
     while tvar i matches ..50
         call main
         tellraw @a "This is a string"
+        give @a minecraft:diamond 64
         # This is a comment
     end
     say %call << Escaped keyword
-    ?macro("Macro example")
+    ?macro("Macro example", "Second argument")
     delvar i
     delvar example
 end

@@ -64,8 +64,8 @@
 						"match": "[a-z0-9A-Z]+"
 					},
 					{
-						"name": "constant.regexp.databind",
-						"match": "\\(|\\)"
+						"name": "meta.template.expression.databind",
+						"match": "\\(|\\)|\\,"
 					},
 					{
 						"name": "string.quoted.double.databind",
@@ -94,7 +94,16 @@
 			},
 			{
 				"name": "keyword.operator.quantifier.regexp.databind",
-				"match": "\\b(true|false)\\b|@a|@e|@p|@r|@s"
+				"match": "\\b(true|false)\\b|@a|@e|@p|@r|@s|[0-9]"
+			},
+			{
+				"name": "keyword.control.mcfunction.databind",
+				"match": "\\b(\\?|advancement|attribute|ban|ban-ip|banlist|bossbar|clear|clone|data|datapack|debug|defaultgamemode|deop|difficulty|effect|enchant|execute|experience|fill|forceload|function|gamemode|gamerule|give|help|item|kick|kill|list|locate|locatebiome|loot|me|msg|op|pardon|pardon-ip|particle|playsound|publish|recipe|reload|save-all|save-off|save-on|schedule|scoreboard|seed|setblock|setidletimeout|setworldspawn|spawnpoint|spectate|spreadplayers|stop|stopsound|summon|tag|team|teammsg|teleport|tell|tellraw|time|title|tm|tp|trigger|w|weather|whitelist|worldborder|xp)\\b"
+			},
+			{
+				"begin": "minecraft:",
+				"end": " ",
+				"name": "constant.numeric.databind"
 			}
 		]
 		},
@@ -127,11 +136,11 @@
 					"patterns": [
 						{
 							"name": "constant.numeric.databind",
-							"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
+							"match": "=|:|-|\\+|%=|\\*|\\/=|>|<|~|\\^"
 						},
 						{
 							"name": "keyword.operator.quantifier.regexp.databind",
-							"match": "@a|@e|@p|@r|@s"
+							"match": "@a|@e|@p|@r|@s|[0-9]|true|false"
 						},
 						{
 							"name": "storage.type.string.go.databind",
@@ -141,11 +150,7 @@
 				},
 				{
 					"name": "constant.numeric.databind",
-					"match": "=|:|-|\\+|%=|\\*|\\/=|>|<"
-				},
-				{
-					"name": "storage.type.numeric.go.databind",
-					"match": "[0-9]|\\."
+					"match": "=|:|-|\\+|%=|\\*|\\/=|>|<|~|\\^"
 				}
 	]},
 		"strings": {

@@ -3,7 +3,7 @@
 	"displayName": "Language Databind",
 	"icon": "images/icon.png",
 	"description": "Visual Studio Code language support for Databind",
-	"version": "0.4.1",
+	"version": "0.5.0",
 	"publisher": "Supercam19",
 	"license": "MIT",
 	"repository": "https://github.com/supercam19/Language-Databind",
