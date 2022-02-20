@@ -8,6 +8,7 @@ Syntax highlighter created by [Supercam19](https://www.github.com/supercam19).
 
 - Syntax highlighting seen in the image below
 - Auto-closing symbols such as: "", {}, etc...
+- Auto-indentation
 
 
 
