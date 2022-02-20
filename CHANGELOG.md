@@ -1,5 +1,15 @@
 # Change Log
 
+## In development
+
+### Additions
+- Auto indent after: 
+  * func
+  * !def
+  * runif
+  * else
+  * while
+
 ## Recolour [0.5.0] (Feb. 18, 2022)
 
 ### Additions

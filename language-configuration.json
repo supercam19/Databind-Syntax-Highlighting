@@ -22,5 +22,14 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""]
+    ],
+    "onEnterRules": [
+        {
+            "beforeText": "func|def|runif|else|while",
+            "action": {
+                "indent": "indent"
+            }
+        }
+        
     ]
 }
