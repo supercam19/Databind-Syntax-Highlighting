@@ -1,6 +1,6 @@
 # Change Log
 
-## In development
+## Auto-indentation [0.5.1] (May 25, 2022)
 
 ### Additions
 - Auto indent after: 
