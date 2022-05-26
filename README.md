@@ -22,7 +22,9 @@ Download the extension from the [VS Code marketplace](https://marketplace.visual
 
 ### Manual
 
-1. Clone the repository or download and extract the zip attached to the [latest release](https://github.com/supercam19/Language-Databind/releases)
-2. Put the extension folder in your /Users/[USERNAME]/.vscode/extenstions folder
-3. Reload VS Code
+1. Download the .vsix file from the [latest release](https://github.com/supercam19/Language-Databind/releases/latest)
+2. Launch VS Code
+3. Go to the extensions tab
+4. Click the three dots in the top right, then click "Install from VSIX"
+5. Navigate to the previous downloaded file in the window that popped up to install it
 

@@ -1,5 +1,10 @@
 # Change Log
 
+## In developement
+
+### Changes
+- New README instructions due to new manual install method (install from VSIX file)
+
 ## Auto-indentation [0.5.1] (May 25, 2022)
 
 ### Additions
